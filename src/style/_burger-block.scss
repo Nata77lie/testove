@@ -1,0 +1,141 @@
+.burger-block {
+    display: none;
+}
+
+.burger-block.burger-block--open {
+    display: block;
+}
+
+.header-action {
+    border-bottom: 0.3px solid #DBDCDE;
+    padding: 19px 23px 26px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-family: 'Raleway-Regular';
+        font-weight: 400;
+        color: #212121;
+    }
+
+    &__link-num {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #E96315;
+        color: #fff;
+        font-size: 6.7px;
+        line-height: 12.3px;
+        text-align: center;
+    }
+
+    &__link-num-heart {
+        left: 12px;
+        top: -4px;
+        width: 13.3px;
+        height: 13.3px;
+    }
+
+    &__link-heart {
+        width: 20px;
+        height: 20px;
+        margin-right: 23px;
+    }
+}
+
+.menu-burger {
+    padding: 26px 26px 26px;
+
+    &__link {
+        font-family: 'Raleway-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        color: #212121;
+    }
+
+    .menu-burger__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.contacts-burger {
+    padding: 19px 23px 49px 42px;
+
+    &__contacts-title {
+        font-family: 'Raleway-Regular';
+        font-weight: 400;
+        color: #5B819A;
+        margin-bottom: 16px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__contacts-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__contacts-link {
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+        color: $accent;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__contacts-img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+        margin-left: 5px;
+    }
+}
+
+.language-burger {
+    &__list {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    &__link-ru,
+    &__link-ua {
+        color: $blue;
+        font-family: 'Raleway-Medium';
+        font-weight: 600;
+        line-height: 19.2px;
+    }
+
+    &__link--active {
+        color: #DBDCDE;
+        pointer-events: none;
+        font-family: 'Raleway-Medium';
+        font-weight: 500;
+    }
+}
+
+.language-burger__item+.language-burger__item {
+    padding-left: 23px;
+}
+
+.menu-mobile__btn.active {
+    &::before {
+        transform: rotate(-45deg) translate(0, -50%);
+        width: 15.56px;
+        background-color: #E96315;
+        bottom: 40%;
+    }
+
+    &::after {
+        transform: rotate(45deg) translate(0, 50%);
+        top: 50%;
+        width: 15.56px;
+        background-color: #E96315;
+    }
+
+    & span {
+        width: 0;
+    }
+}
